@@ -1,0 +1,21 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div><span>slug: </span>{{hero.slug}}</div>
+  <div><span>intelligence: </span>{{hero.intelligence}}</div>
+
+  
+  <div>
+    
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+  </div>
+ <!--  este es el ng for que recorre el arreglo hero.powerstats -->
+  <div *ngFor=" let hero of hero.powerstats">
+    <!-- uso de json pipe para poder mostrar el json sin resultado 
+    documentacion: https://angular.io/api/common/JsonPipe -->
+    <h2>{{hero | json }} Powerstats</h2>
+    </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>

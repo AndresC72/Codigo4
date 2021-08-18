@@ -1,0 +1,17 @@
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+
+ <!--  este es el ng for para mostrar las imagenes 
+  documentacion del json aca: https://akabab.github.io/superhero-api/api/ -->
+
+<!--   <a *ngFor="let hero of heroes">
+   <img src="" alt="">
+  </a> -->
+
+</div>
+
+<app-hero-search></app-hero-search>
