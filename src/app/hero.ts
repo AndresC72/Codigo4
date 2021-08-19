@@ -4,8 +4,16 @@ export interface Hero {
   id: number;
   name: string;
   slug: string;
-  powerstats: string;
+
+ 
   intelligence: number;
+  speed: number;
+  power: number;
+  gender: string;
+  race: string;
+
+  strength:number;
   images: string;
+  image: string;
 }
 

@@ -13,26 +13,18 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 1,
           "name": "A-Bomb",
           "slug": "1-a-bomb",
+          "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/1-a-bomb.jpg",
           "intelligence": 38,
-
-       /*el json  que se quiere mostrar en el hero-detail component es el de powerstats  
-       se logra mostrar solo si se saca de su coleccion en este caso se saco 
-       la variable intelligence para poder ser mostrada
-       
-       Nota: nose si sera mejor usar axios y poner el link del JSON 
-        https://akabab.github.io/superhero-api/api/
-       */        
-           "powerstats": {
-  
-            "strength": 100,
-            "speed": 17,
-            "durability": 80,
-            "power": 24,
-            "combat": 64
-          },
-          "appearance": {
-            "gender": "Male",
+          "strength": 100,
+          "speed": 17,
+          "durability": 80,
+          "power": 24,
+          "combat": 64,
+          "gender": "Male",
             "race": "Human",
+            
+          "appearance": {
+            
             "height": [
               "6'8",
               "203 cm"
@@ -74,17 +66,16 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 2,
           "name": "Abe Sapien",
           "slug": "2-abe-sapien",
-          "powerstats": {
-            "intelligence": 88,
+          "intelligence": 88,
             "strength": 28,
             "speed": 35,
             "durability": 65,
             "power": 100,
-            "combat": 85
-          },
-          "appearance": {
+            "combat": 85,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/2-abe-sapien.jpg",
             "gender": "Male",
             "race": "Icthyo Sapien",
+            "appearance": {
             "height": [
               "6'3",
               "191 cm"
@@ -128,17 +119,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 3,
           "name": "Abin Sur",
           "slug": "3-abin-sur",
-          "powerstats": {
-            "intelligence": 50,
-            "strength": 90,
-            "speed": 53,
-            "durability": 64,
-            "power": 99,
-            "combat": 65
-          },
+          "intelligence": 50,
+          "strength": 90,
+          "speed": 53,
+          "durability": 64,
+          "power": 99,
+          "combat": 65,
+          "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/3-abin-sur.jpg",
+          "gender": "Male",
+          "race": "Ungaran",
           "appearance": {
-            "gender": "Male",
-            "race": "Ungaran",
+           
             "height": [
               "6'1",
               "185 cm"
@@ -180,17 +171,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 4,
           "name": "Abomination",
           "slug": "4-abomination",
-          "powerstats": {
             "intelligence": 63,
             "strength": 80,
             "speed": 53,
             "durability": 90,
             "power": 62,
-            "combat": 95
-          },
-          "appearance": {
+            "combat": 95,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/4-abomination.jpg",
             "gender": "Male",
             "race": "Human / Radiation",
+            "appearance": {
+           
             "height": [
               "6'8",
               "203 cm"
@@ -233,17 +224,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 5,
           "name": "Abraxas",
           "slug": "5-abraxas",
-          "powerstats": {
             "intelligence": 88,
             "strength": 63,
             "speed": 83,
             "durability": 100,
             "power": 100,
-            "combat": 55
-          },
-          "appearance": {
+            "combat": 55,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/5-abraxas.jpg",
             "gender": "Male",
             "race": "Cosmic Entity",
+            "appearance": {
+           
             "height": [
               "-",
               "0 cm"
@@ -285,15 +276,16 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 6,
           "name": "Absorbing Man",
           "slug": "6-absorbing-man",
-          "powerstats": {
             "intelligence": 38,
             "strength": 80,
             "speed": 25,
             "durability": 100,
             "power": 98,
-            "combat": 64
-          },
-          "appearance": {
+            "combat": 64,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/6-absorbing-man.jpg",
+            "gender": "Male",
+            "race": "Human",
+            "appearance": {
             "gender": "Male",
             "race": "Human",
             "height": [
@@ -342,17 +334,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 7,
           "name": "Adam Monroe",
           "slug": "7-adam-monroe",
-          "powerstats": {
             "intelligence": 63,
             "strength": 10,
             "speed": 12,
             "durability": 100,
             "power": 100,
-            "combat": 64
-          },
-          "appearance": {
+            "combat": 64,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/7-adam-monroe.jpg",
             "gender": "Male",
             "race": null,
+            "appearance": {
+            
             "height": [
               "-",
               "0 cm"
@@ -395,15 +387,16 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 8,
           "name": "Adam Strange",
           "slug": "8-adam-strange",
-          "powerstats": {
             "intelligence": 69,
             "strength": 10,
             "speed": 33,
             "durability": 40,
             "power": 37,
-            "combat": 50
-          },
-          "appearance": {
+            "combat": 50,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/8-adam-strange.jpg",
+            "gender": "Male",
+            "race": "Human",
+            "appearance": {
             "gender": "Male",
             "race": "Human",
             "height": [
@@ -448,15 +441,16 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 10,
           "name": "Agent Bob",
           "slug": "10-agent-bob",
-          "powerstats": {
             "intelligence": 10,
             "strength": 8,
             "speed": 13,
             "durability": 5,
             "power": 5,
-            "combat": 20
-          },
-          "appearance": {
+            "combat": 20,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/10-agent-bob.jpg",
+            "gender": "Male",
+            "race": "Human",
+            "appearance": {
             "gender": "Male",
             "race": "Human",
             "height": [
@@ -503,15 +497,16 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 11,
           "name": "Agent Zero",
           "slug": "11-agent-zero",
-          "powerstats": {
             "intelligence": 75,
             "strength": 28,
             "speed": 38,
             "durability": 80,
             "power": 72,
-            "combat": 95
-          },
-          "appearance": {
+            "combat": 95,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/11-agent-zero.jpg",
+            "gender": "Male",
+            "race": null,
+            "appearance": {
             "gender": "Male",
             "race": null,
             "height": [
@@ -555,17 +550,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 12,
           "name": "Air-Walker",
           "slug": "12-air-walker",
-          "powerstats": {
             "intelligence": 50,
             "strength": 85,
             "speed": 100,
             "durability": 85,
             "power": 100,
-            "combat": 40
-          },
-          "appearance": {
+            "combat": 40,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/12-air-walker.jpg",
             "gender": "Male",
             "race": null,
+            "appearance": {
+           
             "height": [
               "6'2",
               "188 cm"
@@ -607,17 +602,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 13,
           "name": "Ajax",
           "slug": "13-ajax",
-          "powerstats": {
             "intelligence": 56,
             "strength": 48,
             "speed": 35,
             "durability": 80,
             "power": 34,
-            "combat": 55
-          },
-          "appearance": {
+            "combat": 55,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/13-ajax.jpg",
             "gender": "Male",
             "race": "Cyborg",
+          "appearance": {
+         
             "height": [
               "6'4",
               "193 cm"
@@ -661,17 +656,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 14,
           "name": "Alan Scott",
           "slug": "14-alan-scott",
-          "powerstats": {
             "intelligence": 63,
             "strength": 80,
             "speed": 23,
             "durability": 90,
             "power": 100,
-            "combat": 32
-          },
-          "appearance": {
+            "combat": 32,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/14-alan-scott.jpg",
             "gender": "Male",
             "race": null,
+            "appearance": {
+           
             "height": [
               "5'11",
               "180 cm"
@@ -715,17 +710,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 15,
           "name": "Alex Mercer",
           "slug": "15-alex-mercer",
-          "powerstats": {
             "intelligence": 50,
             "strength": 80,
             "speed": 42,
             "durability": 90,
             "power": 100,
-            "combat": 50
-          },
-          "appearance": {
+            "combat": 50,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/15-alex-mercer.jpg",
             "gender": "Male",
             "race": "Human",
+            "appearance": {
+           
             "height": [
               "-",
               "0 cm"
@@ -769,17 +764,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 17,
           "name": "Alfred Pennyworth",
           "slug": "17-alfred-pennyworth",
-          "powerstats": {
             "intelligence": 63,
             "strength": 10,
             "speed": 17,
             "durability": 10,
             "power": 7,
-            "combat": 55
-          },
-          "appearance": {
+            "combat": 55,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/17-alfred-pennyworth.jpg",
             "gender": "Male",
             "race": "Human",
+            "appearance": {
+            
             "height": [
               "5'10",
               "178 cm"
@@ -821,17 +816,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 18,
           "name": "Alien",
           "slug": "18-alien",
-          "powerstats": {
             "intelligence": 50,
             "strength": 28,
             "speed": 42,
             "durability": 90,
             "power": 57,
-            "combat": 60
-          },
-          "appearance": {
+            "combat": 60,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/18-alien.jpg",
             "gender": "Male",
             "race": "Xenomorph XX121",
+            "appearance": {
+           
             "height": [
               "8'0",
               "244 cm"
@@ -873,17 +868,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 20,
           "name": "Amazo",
           "slug": "20-amazo",
-          "powerstats": {
             "intelligence": 63,
             "strength": 100,
             "speed": 83,
             "durability": 100,
             "power": 100,
-            "combat": 100
-          },
-          "appearance": {
+            "combat": 10,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/20-amazo.jpg",
             "gender": "Male",
             "race": "Android",
+            "appearance": {
+            
             "height": [
               "8'5",
               "257 cm"
@@ -928,15 +923,16 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 23,
           "name": "Angel",
           "slug": "23-angel",
-          "powerstats": {
             "intelligence": 75,
             "strength": 30,
             "speed": 58,
             "durability": 90,
             "power": 100,
-            "combat": 75
-          },
-          "appearance": {
+            "combat": 75,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/23-angel.jpg",
+            "gender": "Male",
+            "race": "Vampire",
+            "appearance": {
             "gender": "Male",
             "race": "Vampire",
             "height": [
@@ -981,17 +977,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 24,
           "name": "Angel",
           "slug": "24-angel",
-          "powerstats": {
             "intelligence": 63,
             "strength": 13,
             "speed": 46,
             "durability": 64,
             "power": 28,
-            "combat": 42
-          },
-          "appearance": {
+            "combat": 42,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/24-angel.jpg",
             "gender": "Male",
             "race": null,
+          "appearance": {
+         
             "height": [
               "6'0",
               "183 cm"
@@ -1037,17 +1033,17 @@ export class InMemoryDataService implements InMemoryDbService {
           "id": 25,
           "name": "Angel Dust",
           "slug": "25-angel-dust",
-          "powerstats": {
             "intelligence": 38,
             "strength": 55,
             "speed": 23,
             "durability": 42,
             "power": 17,
-            "combat": 30
-          },
-          "appearance": {
+            "combat": 30,
+            "image": "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/25-angel-dust.jpg",
             "gender": "Female",
             "race": "Mutant",
+            "appearance": {
+            
             "height": [
               "5'5",
               "165 cm"

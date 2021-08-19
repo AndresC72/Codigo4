@@ -1,21 +1,25 @@
 <div *ngIf="hero">
   <h2>{{hero.name | uppercase}} Details</h2>
+  <div><img src="{{hero.image}}" alt="" width="75" height="75" style="border-radius: 15px;"></div>
   <div><span>id: </span>{{hero.id}}</div>
   <div><span>slug: </span>{{hero.slug}}</div>
-  <div><span>intelligence: </span>{{hero.intelligence}}</div>
-
+  <h2>powerstats</h2>
+  <div><span>Intelligence: </span>{{hero.intelligence}}</div>
+  <div><span>Speed: </span>{{hero.speed}}</div>
+  <div><span>Power: </span>{{hero.speed}}</div>
+  <div><span>Gender: </span>{{hero.gender}}</div>
+  <div><span>Race: </span>{{hero.race}}</div>
   
   <div>
     
+    <h2>Edit Hero Name</h2>
     <label for="hero-name">Hero name: </label>
     <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
   </div>
- <!--  este es el ng for que recorre el arreglo hero.powerstats -->
-  <div *ngFor=" let hero of hero.powerstats">
-    <!-- uso de json pipe para poder mostrar el json sin resultado 
-    documentacion: https://angular.io/api/common/JsonPipe -->
-    <h2>{{hero | json }} Powerstats</h2>
-    </div>
+ 
+
+
+
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
 </div>

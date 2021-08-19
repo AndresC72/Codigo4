@@ -1,17 +1,51 @@
-<h2>Top Heroes</h2>
+<app-hero-search></app-hero-search>
+<h2>Top Heroes  </h2>
 <div class="heroes-menu">
   <a *ngFor="let hero of heroes"
       routerLink="/detail/{{hero.id}}">
       {{hero.name}}
+     
   </a>
 
- <!--  este es el ng for para mostrar las imagenes 
-  documentacion del json aca: https://akabab.github.io/superhero-api/api/ -->
 
-<!--   <a *ngFor="let hero of heroes">
-   <img src="" alt="">
-  </a> -->
+  <!-- gallery start-->
+  <div class="gallery">
+    <p  routerLink="/detail/2">
+ <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/2-abe-sapien.jpg" alt="Cinque Terre"  >
+    </p>
+    <div class="desc">
+      &#11088; &#11088; &#11088; &#11088; &#11088;
+    
+    </div>
+  </div>
+
+  <div class="gallery">
+    <p  routerLink="/detail/3">
+ <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/3-abin-sur.jpg" alt="Cinque Terre"  >
+    </p>
+    <div class="desc">
+      &#11088; &#11088; &#11088; &#11088; &#11088; </div>
+  </div>
+  
+  
+  <div class="gallery">
+    <p  routerLink="/detail/4">
+ <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/4-abomination.jpg" alt="Cinque Terre"  >
+    </p>
+    <div class="desc">
+      &#11088; &#11088; &#11088; &#11088; &#11088; </div>
+  </div>
+
+  <div class="gallery">
+    <p  routerLink="/detail/5">
+ <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/5-abraxas.jpg" alt="Cinque Terre"  >
+    </p>
+    <div class="desc">
+      &#11088; &#11088; &#11088; &#11088; &#11088; </div>
+  </div>
+  <!-- gallery end-->
+  
 
 </div>
 
-<app-hero-search></app-hero-search>
+
